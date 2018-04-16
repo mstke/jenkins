@@ -131,7 +131,7 @@ public class AnnotatedLargeTextTest {
         AnnotatedLargeText<Void> mocked = new AnnotatedLargeText<>(buf, Charsets.UTF_8, true, null);
         int a = 5;
         int b = 6;
-        int sum = mocked.substractNumbers(a, b);
+        int sum = mocked.sumNumbers(a, b);
         assertEquals(sum, 11);
         System.out.print("POLYMTL");
     }

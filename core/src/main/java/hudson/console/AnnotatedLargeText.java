@@ -183,7 +183,7 @@ public class AnnotatedLargeText<T> extends LargeText {
     /**
      *   Cette fonction obtient la somme de deux chiffres
      */
-    public int substractNumbers(int a, int b) {
+    public int sumNumbers(int a, int b) {
         return a + b;
     }
 
