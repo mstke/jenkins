@@ -179,6 +179,13 @@ public class AnnotatedLargeText<T> extends LargeText {
             rsp.setHeader("X-ConsoleAnnotator", new String(Base64.encode(baos.toByteArray())));
         return r;
     }
+    
+    /**
+     *   Cette fonction obtient la somme de deux chiffres
+     */
+    public int sumNumbers(int a, int b) {
+        return a + b;
+    }
 
     /**
      * Used for sending the state of ConsoleAnnotator to the client, because we are deserializing this object later.

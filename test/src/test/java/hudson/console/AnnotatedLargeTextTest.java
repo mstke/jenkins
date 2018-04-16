@@ -122,5 +122,17 @@ public class AnnotatedLargeTextTest {
             return new TestNote(url, text.length()).encode() + text;
         }
     }
+    
+    @Test
+    public void testSumFunction() throws Exception {
+        System.out.print("POLYMTL");
+        AnnotatedLargeText<Void> mocked = new AnnotatedLargeText<>(buf, Charsets.UTF_8, true, null);
+        int a = 5;
+        int b = 6;
+        int sum = mocked.sumNumbers(a, b);
+        assertEquals(sum, 11);
+        System.out.print("POLYMTL");
+    }
+
 
 }
