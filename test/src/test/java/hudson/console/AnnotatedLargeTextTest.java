@@ -127,7 +127,7 @@ public class AnnotatedLargeTextTest {
     public void testSumFunction() throws Exception {
         System.out.print("POLYMTL");
         ByteBuffer buf = new ByteBuffer();
-        buf.write("HEY");
+        buf.write(("Go back to " + ConsoleNote.PREAMBLE_STR + "////4ByIhqPpAc43AbrEtyDUDc1/UEOXsoY6LeoHSeSlb1d7AAAAlR+LCAAAAAAAAP9b85aBtbiIQS+jNKU4P08vOT+vOD8nVc8xLy+/JLEkNcUnsSg9NSS1oiQktbhEBUT45ZekCpys9xWo8J3KxMDkycCWk5qXXpLhw8BcWpRTwiDkk5VYlqifk5iXrh9cUpSZl25dUcQghWaBM4QGGcYAAYxMDAwVBUAGZwkDq35Rfn4JABmN28qcAAAA" + ConsoleNote.POSTAMBLE_STR + "your home.\n").getBytes());
         AnnotatedLargeText<Void> mocked = new AnnotatedLargeText<>(buf, Charsets.UTF_8, true, null);
         int a = 5;
         int b = 6;
